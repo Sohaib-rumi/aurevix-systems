@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Ordering Policies | The Best Home Baker</title>
+  <meta name="description" content="Answers to common questions regarding custom cake transport, deposit terms, allergen awareness, and delivery zones.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: {
+              primary: '#E4D8CB',
+              secondary: '#E4D8CB',
+              elevated: '#E4D8CB',
+              dark: '#231B16',
+            },
+            noir: '#231B16',
+            charcoal: '#4A3E37',
+            parchment: '#A09086',
+            dustyBrown: {
+              DEFAULT: '#231B16',
+              hover: '#3A2C25',
+              tint: '#CFB3A9',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Semantic Design System -->
+  <link rel="stylesheet" href="assets/css/design-system.css">
+</head>
+<body class="bg-[#E4D8CB] text-[#231B16] antialiased selection:bg-[#CFB3A9] selection:text-[#231B16]">
+
+  <!-- Top Announcement Bar -->
+  <aside class="bg-[#E4D8CB] border-b border-[#A09086] py-2 text-center text-xs tracking-wider uppercase font-sans text-[#4A3E37]">
+    <span class="inline-flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#231B16]"></span>
+      Care guides and transport boxes provided with every order
+    </span>
+  </aside>
+
+  <!-- Navigation Bar (Single line desktop, height 68px) -->
+  <header class="sticky top-0 z-50 bg-[#E4D8CB]/95 backdrop-blur-md border-b border-[#A09086]">
+    <div class="max-w-7xl mx-auto px-6 h-[68px] flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="w-9 h-9 rounded-full bg-[#CFB3A9] border border-[#231B16]/20 flex items-center justify-center text-[#231B16] font-serif font-bold text-lg group-hover:scale-105 transition-transform">
+          B
+        </span>
+        <div class="flex flex-col">
+          <span class="font-serif text-xl tracking-tight font-semibold text-[#231B16] leading-none">The Best Home Baker</span>
+          <span class="text-[10px] uppercase tracking-widest text-[#4A3E37] font-sans">Bespoke Cake Atelier</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#4A3E37]">
+        <a href="index.html" class="hover:text-[#231B16] transition-colors">Home</a>
+        <a href="gallery-flavors.html" class="hover:text-[#231B16] transition-colors">Gallery & Flavors</a>
+        <a href="about.html" class="hover:text-[#231B16] transition-colors">About the Baker</a>
+        <a href="faq-terms.html" class="text-[#231B16] font-semibold">FAQ & Policies</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="inquiry.html" class="btn-primary text-sm">
+          <span>Start Custom Inquiry</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-[#231B16]" aria-label="Open mobile navigation" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-overlay" class="fixed inset-0 bg-black/40 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-nav-drawer" class="fixed top-0 right-0 w-[280px] h-full bg-[#CDC6C3] z-50 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#A09086]">
+        <span class="font-serif text-lg font-semibold text-[#231B16]">Menu</span>
+        <button id="mobile-menu-close" class="p-1 text-[#4A3E37]" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-6 text-base font-medium text-[#231B16]">
+        <a href="index.html" class="hover:text-[#231B16] py-1">Home</a>
+        <a href="gallery-flavors.html" class="hover:text-[#231B16] py-1">Gallery & Flavors</a>
+        <a href="inquiry.html" class="hover:text-[#231B16] py-1">Custom Inquiry</a>
+        <a href="about.html" class="hover:text-[#231B16] py-1">About the Baker</a>
+        <a href="faq-terms.html" class="text-[#231B16] font-semibold py-1">FAQ & Policies</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#A09086]">
+      <a href="inquiry.html" class="btn-primary w-full text-center text-sm">
+        Start Custom Inquiry
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="pt-12 md:pt-16 pb-12 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <span class="badge-pill mb-4">Guidelines & Policies</span>
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#231B16] tracking-tight mb-4">
+          Frequently asked questions and terms.
+        </h1>
+        <p class="text-base md:text-lg text-[#4A3E37] max-w-2xl font-sans leading-relaxed">
+          Clear, transparent details regarding care instructions, deposit terms, allergen management, and white-glove transport zones.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACCORDIONS SECTION -->
+    <section class="py-16 md:py-24 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-4xl mx-auto px-6 space-y-12">
+        
+        <!-- CATEGORY 1: TRANSPORT & SELF-PICKUP -->
+        <div id="transport" class="space-y-4">
+          <h2 class="font-serif text-2xl font-semibold text-[#231B16] pb-2 border-b border-[#A09086]">
+            Transport Instructions & Temperature Care
+          </h2>
+
+          <div class="space-y-3">
+            <div class="accordion-item open">
+              <button class="accordion-trigger" aria-expanded="true">
+                <span>How should I transport my cake safely in my vehicle?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed mb-3">
+                  Always place the cake box on the <strong>flat floorboard of your vehicle</strong> (the passenger side footwell is best). Never place a cake on a slanted car seat or have a passenger hold it on their lap. The motion of the car and tilted angles will shift heavy tiers.
+                </p>
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  Turn your car's air conditioning on high at least 5 minutes prior to placing the cake inside. Drive gently, taking turns slowly and avoiding sudden braking.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>When should the cake be taken out of refrigeration?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  Our cakes are made with real cultured butter, which sets firmly when cold. Keep your cake refrigerated until 1 to 2 hours before cutting (or 45 minutes in warm summer months). Serving at room temperature allows the buttercream to achieve its signature silky, melt-in-your-mouth texture.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Can multi-tier cakes be collected by the client?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  Single-tier and 2-tier celebration cakes are packaged in reinforced bakery boxes suitable for client transport. For 3-tier and 4-tier wedding centerpieces, we strongly mandate our climate-controlled white-glove delivery service to guarantee safe transit and on-site assembly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 2: DEPOSIT & CANCELLATION POLICIES -->
+        <div id="deposits" class="space-y-4">
+          <h2 class="font-serif text-2xl font-semibold text-[#231B16] pb-2 border-b border-[#A09086]">
+            Deposit Terms & Payment Policies
+          </h2>
+
+          <div class="space-y-3">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>What is the deposit required to reserve my date?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  A 50% non-refundable retainer is required to reserve your event date on our calendar. Because we accept only one or two bespoke commissions each weekend, your deposit reserves our kitchen and guarantees we decline other prospective events for that slot.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>When is the remaining balance due?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  The final 50% balance and delivery fee are due exactly 14 calendar days prior to your celebration date. We accept bank transfers, major credit cards, and secure electronic invoices.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>What is your cancellation and rescheduling policy?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  If you need to reschedule your event date, your deposit may be transferred to a future available date within 6 months, provided written notice is received at least 21 days prior to the original date. Cancellations made with less than 14 days notice are non-refundable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 3: ALLERGEN PROTOCOL -->
+        <div id="allergens" class="space-y-4">
+          <h2 class="font-serif text-2xl font-semibold text-[#231B16] pb-2 border-b border-[#A09086]">
+            Allergen Management & Dietary Accommodations
+          </h2>
+
+          <div class="space-y-3">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Do you offer gluten-friendly or dairy-conscious options?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed mb-2">
+                  Yes, we offer exquisite gluten-friendly sponge recipes crafted with certified almond flour and European starch blends.
+                </p>
+                <p class="text-xs text-[#231B16] font-semibold">
+                  Please Note: While we follow strict sanitization and separation procedures, our home atelier kitchen regularly processes wheat, dairy, and eggs. We are not a certified sterile celiac facility.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>How are tree nuts and peanuts handled?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  We frequently use almond flour, Bronte pistachios, and roasted walnuts in specific flavor profiles. If an order specifies a nut allergy, we use isolated pans, dedicated mixing bowls, and fresh spatulas to prevent cross-contact. However, we cannot guarantee zero airborne traces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 4: FULFILLMENT & DELIVERY ZONES -->
+        <div id="zones" class="space-y-4">
+          <h2 class="font-serif text-2xl font-semibold text-[#231B16] pb-2 border-b border-[#A09086]">
+            Fulfillment Zones & White-Glove Setup
+          </h2>
+
+          <div class="space-y-3">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>What areas do you deliver to?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed mb-3">
+                  We provide direct refrigerated delivery within a 35-mile radius of our studio. Standard venue delivery includes coordinated arrival time, direct handover to venue staff, and on-table positioning.
+                </p>
+                <p class="text-xs text-[#4A3E37]">
+                  Extended delivery up to 60 miles is available for multi-tier wedding commissions subject to mileage rates and driver schedule.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Can you coordinate on-site with our florist?</span>
+                <span class="accordion-icon text-[#231B16] text-xl font-bold">↓</span>
+              </button>
+              <div class="accordion-content">
+                <p class="text-sm text-[#4A3E37] leading-relaxed">
+                  Absolutely. For wedding centerpieces, our pastry chef often coordinates directly with the couple's florist to place certified food-safe organic stems or cascading fresh blooms immediately prior to reception doors opening.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER PROMPT -->
+    <section class="py-16 bg-[#231B16] text-[#E4D8CB] text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-4">
+          Have an unlisted question?
+        </h2>
+        <p class="text-sm md:text-base text-[#CFC2C8] max-w-lg mx-auto mb-6">
+          Submit your event inquiry and our coordinator will answer all questions specific to your venue.
+        </p>
+        <a href="inquiry.html" class="btn-primary">
+          Start Custom Inquiry
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Bottom CTA for Mobile -->
+  <aside class="sticky-mobile-cta">
+    <div class="flex flex-col">
+      <span class="text-xs font-semibold text-[#231B16]">Have Questions?</span>
+      <span class="text-[11px] text-[#4A3E37]">We are here to help</span>
+    </div>
+    <a href="inquiry.html" class="btn-primary text-xs py-2 px-4">
+      Book Inquiry
+    </a>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#E4D8CB] border-t border-[#A09086] py-16 text-sm text-[#4A3E37]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <span class="font-serif text-2xl font-bold text-[#231B16] block mb-2">The Best Home Baker</span>
+        <p class="text-xs leading-relaxed text-[#4A3E37]">
+          Handcrafted artisanal celebration cakes and botanical pastry art. Made from scratch in our certified home atelier kitchen.
+        </p>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Explore</p>
+        <ul class="space-y-2 text-xs">
+          <li><a href="gallery-flavors.html" class="hover:text-[#231B16]">Portfolio Gallery</a></li>
+          <li><a href="gallery-flavors.html#flavors" class="hover:text-[#231B16]">Flavor Combinations</a></li>
+          <li><a href="gallery-flavors.html#sizing" class="hover:text-[#231B16]">Sizing & Serving Calculator</a></li>
+          <li><a href="about.html" class="hover:text-[#231B16]">Our Ingredients & Sourcing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Client Care</p>
+        <ul class="space-y-2 text-xs">
+          <li><a href="inquiry.html" class="hover:text-[#231B16]">Custom Inquiry Form</a></li>
+          <li><a href="faq-terms.html#transport" class="hover:text-[#231B16]">Transport Instructions</a></li>
+          <li><a href="faq-terms.html#deposits" class="hover:text-[#231B16]">Deposit & Retainer Policies</a></li>
+          <li><a href="faq-terms.html#allergens" class="hover:text-[#231B16]">Allergen Protocol</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Atelier Studio</p>
+        <p class="text-xs text-[#4A3E37] leading-relaxed mb-2">
+          Appointments and tastings scheduled by confirmed reservation only.
+        </p>
+        <p class="text-xs font-mono text-[#231B16]">hello@thebesthomebaker.com</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#A09086] flex flex-col md:flex-row items-center justify-between text-xs text-[#6E5F56]">
+      <p>© 2026 The Best Home Baker. All rights reserved.</p>
+      <p class="mt-2 md:mt-0">Certified Licensed Home Kitchen · Purity & Hygiene First</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

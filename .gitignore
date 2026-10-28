@@ -1,0 +1,16 @@
+# System & scratch
+scratch/
+.agents/
+.gemini/
+*.log
+__pycache__/
+*.pyc
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencies
+node_modules/
+package-lock.json

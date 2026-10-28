@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Baker & Atelier | The Best Home Baker</title>
+  <meta name="description" content="Discover the artisan behind The Best Home Baker. Our baking philosophy, heirloom French pastry training, and pure ingredient sourcing standards.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: {
+              primary: '#E4D8CB',
+              secondary: '#E4D8CB',
+              elevated: '#E4D8CB',
+              dark: '#231B16',
+            },
+            noir: '#231B16',
+            charcoal: '#4A3E37',
+            parchment: '#A09086',
+            dustyBrown: {
+              DEFAULT: '#231B16',
+              hover: '#3A2C25',
+              tint: '#CFB3A9',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Semantic Design System -->
+  <link rel="stylesheet" href="assets/css/design-system.css">
+</head>
+<body class="bg-[#E4D8CB] text-[#231B16] antialiased selection:bg-[#CFB3A9] selection:text-[#231B16]">
+
+  <!-- Top Announcement Bar -->
+  <aside class="bg-[#E4D8CB] border-b border-[#A09086] py-2 text-center text-xs tracking-wider uppercase font-sans text-[#4A3E37]">
+    <span class="inline-flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#231B16]"></span>
+      Certified Licensed Residential Pâtisserie Atelier
+    </span>
+  </aside>
+
+  <!-- Navigation Bar (Single line desktop, height 68px) -->
+  <header class="sticky top-0 z-50 bg-[#E4D8CB]/95 backdrop-blur-md border-b border-[#A09086]">
+    <div class="max-w-7xl mx-auto px-6 h-[68px] flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="w-9 h-9 rounded-full bg-[#CFB3A9] border border-[#231B16]/20 flex items-center justify-center text-[#231B16] font-serif font-bold text-lg group-hover:scale-105 transition-transform">
+          B
+        </span>
+        <div class="flex flex-col">
+          <span class="font-serif text-xl tracking-tight font-semibold text-[#231B16] leading-none">The Best Home Baker</span>
+          <span class="text-[10px] uppercase tracking-widest text-[#4A3E37] font-sans">Bespoke Cake Atelier</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-[#4A3E37]">
+        <a href="index.html" class="hover:text-[#231B16] transition-colors">Home</a>
+        <a href="gallery-flavors.html" class="hover:text-[#231B16] transition-colors">Gallery & Flavors</a>
+        <a href="about.html" class="text-[#231B16] font-semibold">About the Baker</a>
+        <a href="faq-terms.html" class="hover:text-[#231B16] transition-colors">FAQ & Policies</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="inquiry.html" class="btn-primary text-sm">
+          <span>Start Custom Inquiry</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-[#231B16]" aria-label="Open mobile navigation" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-overlay" class="fixed inset-0 bg-black/40 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-nav-drawer" class="fixed top-0 right-0 w-[280px] h-full bg-[#CDC6C3] z-50 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#A09086]">
+        <span class="font-serif text-lg font-semibold text-[#231B16]">Menu</span>
+        <button id="mobile-menu-close" class="p-1 text-[#4A3E37]" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-6 text-base font-medium text-[#231B16]">
+        <a href="index.html" class="hover:text-[#231B16] py-1">Home</a>
+        <a href="gallery-flavors.html" class="hover:text-[#231B16] py-1">Gallery & Flavors</a>
+        <a href="inquiry.html" class="hover:text-[#231B16] py-1">Custom Inquiry</a>
+        <a href="about.html" class="text-[#231B16] font-semibold py-1">About the Baker</a>
+        <a href="faq-terms.html" class="hover:text-[#231B16] py-1">FAQ & Policies</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#A09086]">
+      <a href="inquiry.html" class="btn-primary w-full text-center text-sm">
+        Start Custom Inquiry
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO / FOUNDER STORY SECTION -->
+    <section class="pt-12 md:pt-16 pb-16 md:pb-24 border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Story Text -->
+          <div class="lg:col-span-6">
+            <span class="badge-pill mb-4">Founder & Pastry Artisan</span>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#231B16] tracking-tight mb-6">
+              A commitment to edible botany and pure craft.
+            </h1>
+            <div class="space-y-4 text-base text-[#4A3E37] leading-relaxed">
+              <p>
+                The Best Home Baker was founded on a singular conviction: celebratory cakes should be as memorable in flavor as they are in architectural presence.
+              </p>
+              <p>
+                After classical pâtisserie training in Lyon and years working within Michelin-accredited pastry departments, our founder returned to the intimacy of an artisanal home atelier. Here, without the rush of industrial assembly lines, every cake receives the patient, undivided focus it deserves.
+              </p>
+              <p>
+                We source heirloom flours, churned European butter, and organic botanicals grown in local pesticide-free cottage gardens. We do not use commercial flavorings, premade fillings, or artificial preservatives.
+              </p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-[#A09086] flex items-center gap-6">
+              <div>
+                <p class="font-serif text-2xl font-bold text-[#231B16]">10+ Years</p>
+                <p class="text-xs uppercase tracking-wider text-[#4A3E37]">Pâtisserie Practice</p>
+              </div>
+              <div class="w-[1px] h-8 bg-[#A09086]"></div>
+              <div>
+                <p class="font-serif text-2xl font-bold text-[#231B16]">1 Commission</p>
+                <p class="text-xs uppercase tracking-wider text-[#4A3E37]">Per Weekend Slot</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Baker Photo Visual -->
+          <div class="lg:col-span-6">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border border-[#A09086] bg-[#CDC6C3] group">
+              <img 
+                src="assets/images/baker-atelier-story.jpg" 
+                alt="Artisan pastry chef in sunlit stone kitchen garnishing bespoke two-tier vanilla bean cake" 
+                class="w-full h-[460px] md:h-[540px] object-cover group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="p-4 bg-[#CDC6C3] border-t border-[#A09086] text-xs text-[#4A3E37] flex items-center justify-between">
+                <span>The Atelier Kitchen · Hand-finishing with culinary tweezers</span>
+                <span class="font-mono text-[#231B16]">Bespoke Craft</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BAKING PHILOSOPHY & SOURCING PILLARS -->
+    <section class="py-20 md:py-28 bg-[#CDC6C3] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-2xl mb-16">
+          <span class="badge-pill mb-4">Provenance Matters</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-semibold text-[#231B16] tracking-tight mb-4">
+            Uncompromising pantry standards.
+          </h2>
+          <p class="text-base text-[#4A3E37] font-sans leading-relaxed">
+            The foundation of exceptional crumb and texture lies in the integrity of simple, pure agricultural ingredients.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="p-8 rounded-2xl bg-[#E4D8CB] border border-[#A09086]">
+            <div class="w-10 h-10 rounded-full bg-[#CFB3A9] text-[#231B16] flex items-center justify-center font-serif text-xl font-bold mb-6">
+              A
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-[#231B16] mb-3">82% Cultured Grass-Fed Butter</h3>
+            <p class="text-sm text-[#4A3E37] leading-relaxed">
+              We exclusively use slow-churned European cultured butter. The higher butterfat percentage and natural fermentation yield a velvety crumb and an incomparable, silky Swiss meringue buttercream.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-8 rounded-2xl bg-[#E4D8CB] border border-[#A09086]">
+            <div class="w-10 h-10 rounded-full bg-[#CFB3A9] text-[#231B16] flex items-center justify-center font-serif text-xl font-bold mb-6">
+              B
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-[#231B16] mb-3">Single-Origin Vanilla Pods</h3>
+            <p class="text-sm text-[#4A3E37] leading-relaxed">
+              We never use imitation vanillin. Whole Madagascar Bourbon and floral Tahitian vanilla beans are split and slow-steeped in milk and syrups, leaving authentic fragrant caviar flecks throughout.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-8 rounded-2xl bg-[#E4D8CB] border border-[#A09086]">
+            <div class="w-10 h-10 rounded-full bg-[#CFB3A9] text-[#231B16] flex items-center justify-center font-serif text-xl font-bold mb-6">
+              C
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-[#231B16] mb-3">Pesticide-Free Edible Botany</h3>
+            <p class="text-sm text-[#4A3E37] leading-relaxed">
+              Florals placed on our cakes are certified culinary-grade and organically grown specifically for human consumption. We never use sprayed florist blooms directly against edible surfaces.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KITCHEN HYGIENE & PREPARATION STANDARDS -->
+    <section class="py-20 md:py-28 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5">
+            <span class="badge-pill mb-4">Health & Safety Protocol</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-semibold text-[#231B16] tracking-tight mb-4">
+              Certified studio hygiene and discipline.
+            </h2>
+            <p class="text-base text-[#4A3E37] font-sans leading-relaxed mb-6">
+              Operating as an artisanal home studio requires rigorous adherence to food safety, commercial refrigeration, and cross-contamination protocols.
+            </p>
+            <div class="space-y-3 text-xs text-[#4A3E37]">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#166534]"></span>
+                <span>Certified Food Protection Manager on premises.</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#166534]"></span>
+                <span>Dedicated commercial double-door refrigeration unit.</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#166534]"></span>
+                <span>Separate allergen prep surfaces and sanitized tools.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="p-6 rounded-2xl bg-[#CDC6C3] border border-[#A09086]">
+                <h4 class="font-serif text-xl font-semibold text-[#231B16] mb-2">36-Hour Bake Freshness</h4>
+                <p class="text-xs text-[#4A3E37] leading-relaxed">
+                  Unlike commercial operations that freeze cakes for weeks, your sponge layers are baked from scratch within 36 hours of celebration pickup.
+                </p>
+              </div>
+
+              <div class="p-6 rounded-2xl bg-[#CDC6C3] border border-[#A09086]">
+                <h4 class="font-serif text-xl font-semibold text-[#231B16] mb-2">Temperature Stability</h4>
+                <p class="text-xs text-[#4A3E37] leading-relaxed">
+                  Our Swiss meringue buttercream contains real butter that sets firmly in refrigeration and softens to silk at room temperature for cutting.
+                </p>
+              </div>
+
+              <div class="p-6 rounded-2xl bg-[#CDC6C3] border border-[#A09086]">
+                <h4 class="font-serif text-xl font-semibold text-[#231B16] mb-2">Food-Grade Dowels</h4>
+                <p class="text-xs text-[#4A3E37] leading-relaxed">
+                  Multi-tier creations feature food-safe internal support pillars and custom baseboards for absolute transport security.
+                </p>
+              </div>
+
+              <div class="p-6 rounded-2xl bg-[#CDC6C3] border border-[#A09086]">
+                <h4 class="font-serif text-xl font-semibold text-[#231B16] mb-2">Local Delivery Care</h4>
+                <p class="text-xs text-[#4A3E37] leading-relaxed">
+                  Delivered in climate-controlled transit with non-slip foam footing and on-site positioning by the baker.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER PROMPT -->
+    <section class="py-16 bg-[#231B16] text-[#E4D8CB] text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-4">
+          Let’s discuss your celebration vision.
+        </h2>
+        <p class="text-sm md:text-base text-[#CFC2C8] max-w-lg mx-auto mb-6">
+          We would be honored to create something thoughtful for your guests.
+        </p>
+        <a href="inquiry.html" class="btn-primary">
+          Start Custom Inquiry
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Bottom CTA for Mobile -->
+  <aside class="sticky-mobile-cta">
+    <div class="flex flex-col">
+      <span class="text-xs font-semibold text-[#231B16]">The Atelier</span>
+      <span class="text-[11px] text-[#4A3E37]">Handmade with care</span>
+    </div>
+    <a href="inquiry.html" class="btn-primary text-xs py-2 px-4">
+      Book Inquiry
+    </a>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#E4D8CB] border-t border-[#A09086] py-16 text-sm text-[#4A3E37]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <span class="font-serif text-2xl font-bold text-[#231B16] block mb-2">The Best Home Baker</span>
+        <p class="text-xs leading-relaxed text-[#4A3E37]">
+          Handcrafted artisanal celebration cakes and botanical pastry art. Made from scratch in our certified home atelier kitchen.
+        </p>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Explore</p>
+        <ul class="space-y-2 text-xs">
+          <li><a href="gallery-flavors.html" class="hover:text-[#231B16]">Portfolio Gallery</a></li>
+          <li><a href="gallery-flavors.html#flavors" class="hover:text-[#231B16]">Flavor Combinations</a></li>
+          <li><a href="gallery-flavors.html#sizing" class="hover:text-[#231B16]">Sizing & Serving Calculator</a></li>
+          <li><a href="about.html" class="hover:text-[#231B16]">Our Ingredients & Sourcing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Client Care</p>
+        <ul class="space-y-2 text-xs">
+          <li><a href="inquiry.html" class="hover:text-[#231B16]">Custom Inquiry Form</a></li>
+          <li><a href="faq-terms.html#transport" class="hover:text-[#231B16]">Transport Instructions</a></li>
+          <li><a href="faq-terms.html#deposits" class="hover:text-[#231B16]">Deposit & Retainer Policies</a></li>
+          <li><a href="faq-terms.html#allergens" class="hover:text-[#231B16]">Allergen Protocol</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Atelier Studio</p>
+        <p class="text-xs text-[#4A3E37] leading-relaxed mb-2">
+          Appointments and tastings scheduled by confirmed reservation only.
+        </p>
+        <p class="text-xs font-mono text-[#231B16]">hello@thebesthomebaker.com</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#A09086] flex flex-col md:flex-row items-center justify-between text-xs text-[#6E5F56]">
+      <p>© 2026 The Best Home Baker. All rights reserved.</p>
+      <p class="mt-2 md:mt-0">Certified Licensed Home Kitchen · Purity & Hygiene First</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

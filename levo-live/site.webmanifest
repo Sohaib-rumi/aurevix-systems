@@ -1,0 +1,16 @@
+{
+  "name": "Aurevix Systems | Architectural Web Production",
+  "short_name": "Aurevix Systems",
+  "description": "5-page custom websites engineered for $100 flat. Shipped in 48 hours.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070708",
+  "theme_color": "#ffb100",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

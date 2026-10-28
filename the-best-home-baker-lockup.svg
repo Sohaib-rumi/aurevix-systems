@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" height="100%">
+  <defs>
+    <style>
+      .serif-text { font-family: 'Cormorant Garamond', Georgia, serif; }
+      .sans-text { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="120" fill="transparent" />
+
+  <!-- Monogram Emblem (Left) -->
+  <g transform="translate(60, 60)">
+    <circle cx="0" cy="0" r="42" fill="#FAF7F2" stroke="#A09086" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#CDC6C3" stroke-width="1" />
+    
+    <!-- Botanical Branch Snippet -->
+    <path d="M -26 12 C -28 -10 -15 -28 0 -30" fill="none" stroke="#A09086" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M -23 4 C -30 2 -28 -5 -20 -1 Z" fill="#CFB3A9" />
+    <path d="M -18 -12 C -24 -15 -21 -22 -14 -16 Z" fill="#A09086" />
+
+    <!-- 'B' Letterform -->
+    <text text-anchor="middle" y="15" class="serif-text" font-size="44" font-weight="600" fill="#231B16">B</text>
+  </g>
+
+  <!-- Wordmark & Submark (Right) -->
+  <g transform="translate(130, 52)">
+    <text x="0" y="8" class="serif-text" font-size="34" font-weight="600" fill="#231B16" letter-spacing="2">THE BEST HOME BAKER</text>
+    <text x="2" y="32" class="sans-text" font-size="11" font-weight="600" fill="#4A3E37" letter-spacing="4">BESPOKE ARTISANAL PÂTISSERIE</text>
+  </g>
+</svg>

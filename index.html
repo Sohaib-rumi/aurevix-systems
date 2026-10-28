@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Best Home Baker | Bespoke Handcrafted Cakes & Artisanal Pâtisserie</title>
+  <meta name="description" content="Artisanal home bakery crafting bespoke, sculptural cakes for weddings, milestone birthdays, and luxury celebrations. Natural ingredients and edible botanical design.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/the-best-home-baker-logo.svg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cotton: '#E4D8CB',
+            greige: '#CDC6C3',
+            roseBlonde: '#CFB3A9',
+            dustyBrown: '#A09086',
+            espresso: '#231B16',
+            espressoLight: '#32261F',
+            porcelain: '#E4D8CB',
+            honeyAmber: '#CFB3A9',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Semantic Design System -->
+  <link rel="stylesheet" href="assets/css/design-system.css">
+
+  <style>
+    /* Scalloped / Stepped Side Wave Motif from Reference Image */
+    .scallop-bracket-left {
+      background-image: radial-gradient(circle at 0% 50%, transparent 16px, #E4D8CB 17px);
+    }
+    .scallop-bracket-right {
+      background-image: radial-gradient(circle at 100% 50%, transparent 16px, #E4D8CB 17px);
+    }
+
+    /* Honey / Cake Pill Buttons */
+    .btn-honey {
+      background-color: #CFB3A9;
+      color: #231B16 !important;
+      border-radius: 9999px;
+      font-weight: 600;
+      padding: 0.65rem 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.25s ease;
+      font-size: 0.875rem;
+      box-shadow: 0 3px 10px rgba(74, 62, 55, 0.15);
+    }
+    .btn-honey:hover {
+      background-color: #A09086;
+      color: #E4D8CB !important;
+      transform: translateY(-1px);
+      box-shadow: 0 5px 16px rgba(74, 62, 55, 0.25);
+    }
+
+    .btn-honey-outline {
+      background-color: transparent;
+      color: #231B16 !important;
+      border: 1px solid #A09086;
+      border-radius: 9999px;
+      font-weight: 600;
+      padding: 0.65rem 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.25s ease;
+      font-size: 0.875rem;
+    }
+    .btn-honey-outline:hover {
+      background-color: #E4D8CB;
+      border-color: #231B16;
+    }
+  </style>
+</head>
+<body class="bg-[#E4D8CB] text-[#231B16] antialiased selection:bg-[#CFB3A9] selection:text-[#231B16]">
+
+  <!-- 1. TOP UTILITY STRIP (Reference Style) -->
+  <aside class="bg-[#231B16] text-[#E4D8CB] py-2 px-6 text-xs text-center border-b border-[#32261F] flex items-center justify-between">
+    <div class="hidden md:flex items-center gap-4 text-[11px] uppercase tracking-wider">
+      <span>Certified Licensed Home Atelier</span>
+      <span>•</span>
+      <span>Pure Scratch Baking</span>
+    </div>
+    <div class="mx-auto md:mx-0 flex items-center gap-2 text-xs font-medium">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#CFB3A9]"></span>
+      <span>Now reserving bespoke cake dates for 2026 and 2027 wedding seasons</span>
+    </div>
+    <div class="hidden md:flex items-center gap-3 text-xs">
+      <a href="inquiry.html" class="text-[#CFB3A9] hover:underline">Check Availability</a>
+    </div>
+  </aside>
+
+  <!-- 2. MAIN HEADER (Centered Logo, Reference Style) -->
+  <header class="sticky top-0 z-50 bg-[#E4D8CB]/95 backdrop-blur-md border-b border-[#A09086]">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Left Navigation Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#4A3E37]">
+        <a href="index.html" class="text-[#231B16] font-semibold border-b border-[#231B16] pb-0.5">Home</a>
+        <a href="gallery-flavors.html" class="hover:text-[#231B16] transition-colors">Cake Portfolio</a>
+        <a href="gallery-flavors.html#flavors" class="hover:text-[#231B16] transition-colors">Flavors</a>
+        <a href="gallery-flavors.html#sizing" class="hover:text-[#231B16] transition-colors">Serving Guide</a>
+      </nav>
+
+      <!-- Center Logo Lockup -->
+      <a href="index.html" class="flex flex-col items-center group">
+        <span class="font-serif text-2xl md:text-3xl tracking-wide font-bold text-[#231B16] leading-none">
+          the best home baker
+        </span>
+        <span class="text-[9px] uppercase tracking-[0.28em] text-[#A09086] font-sans mt-1">
+          Bespoke Artisanal Pâtisserie
+        </span>
+      </a>
+
+      <!-- Right Navigation Actions -->
+      <div class="hidden md:flex items-center gap-5">
+        <a href="about.html" class="text-sm font-medium text-[#4A3E37] hover:text-[#231B16]">The Baker</a>
+        <a href="faq-terms.html" class="text-sm font-medium text-[#4A3E37] hover:text-[#231B16]">Policies</a>
+        <a href="inquiry.html" class="btn-honey text-xs py-2.5 px-5">
+          <span>Inquire</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Trigger -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-[#231B16]" aria-label="Open mobile navigation">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-overlay" class="fixed inset-0 bg-black/50 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-nav-drawer" class="fixed top-0 right-0 w-[290px] h-full bg-[#E4D8CB] z-50 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#A09086]">
+        <span class="font-serif text-lg font-semibold text-[#231B16]">Menu</span>
+        <button id="mobile-menu-close" class="p-1 text-[#4A3E37]" aria-label="Close menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-6 text-base font-medium text-[#231B16]">
+        <a href="index.html" class="font-semibold text-[#CFB3A9] py-1">Home</a>
+        <a href="gallery-flavors.html" class="hover:text-[#CFB3A9] py-1">Cake Portfolio</a>
+        <a href="gallery-flavors.html#flavors" class="hover:text-[#CFB3A9] py-1">Flavors & Sponge</a>
+        <a href="gallery-flavors.html#sizing" class="hover:text-[#CFB3A9] py-1">Serving Guide</a>
+        <a href="inquiry.html" class="hover:text-[#CFB3A9] py-1">Custom Inquiry</a>
+        <a href="about.html" class="hover:text-[#CFB3A9] py-1">About the Baker</a>
+        <a href="faq-terms.html" class="hover:text-[#CFB3A9] py-1">FAQ & Policies</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-[#A09086]">
+      <a href="inquiry.html" class="btn-honey w-full text-center text-sm py-3">
+        Book Custom Cake
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- 3. HERO SECTION (Editorial Image-led with Headline Over Image, Matching Reference) -->
+    <section class="relative bg-[#231B16] text-[#E4D8CB] overflow-hidden">
+      <div class="relative h-[520px] md:h-[620px] w-full">
+        <!-- Background Cinematic Cake-Making Video with Soft Dark Gradient Scrim -->
+        <video 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          poster="assets/images/hero-video-poster.jpg" 
+          class="w-full h-full object-cover object-center opacity-75"
+          aria-hidden="true"
+        >
+          <source src="assets/videos/the-best-home-baker-hero.mp4" type="video/mp4">
+          <img 
+            src="assets/images/hero-video-poster.jpg" 
+            alt="Bespoke botanical wedding cake with deckled gold edges crafted by The Best Home Baker" 
+            class="w-full h-full object-cover object-center"
+          >
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#231B16]/90 via-[#231B16]/60 to-transparent pointer-events-none"></div>
+
+        <!-- Hero Content Overlay (Left-Aligned, exactly like reference) -->
+        <div class="absolute inset-0 max-w-7xl mx-auto px-6 flex flex-col justify-center">
+          <div class="max-w-xl">
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.08] tracking-tight mb-4 text-[#E4D8CB]">
+              Living cakes with artisanal soul
+            </h1>
+            <p class="text-base md:text-lg text-[#E4D8CB] font-sans leading-relaxed mb-8 max-w-md">
+              Bespoke celebratory tiers, hand-piped Swiss meringue buttercream, and organic pressed botanicals crafted entirely from scratch.
+            </p>
+            <div class="flex items-center gap-4">
+              <a href="inquiry.html" class="btn-honey text-base py-3 px-8">
+                <span>Inquire Now</span>
+              </a>
+              <a href="gallery-flavors.html" class="btn-honey-outline text-[#E4D8CB] border-[#E4D8CB] hover:bg-[#E4D8CB]/10 text-base py-3 px-6">
+                <span>View Gallery</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Bar Under Hero (Matching Reference Dark Strip with 4 Pillars) -->
+      <div class="bg-[#1C1511] border-t border-[#32261F] py-4 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
+          <div class="flex items-center justify-center md:justify-start gap-2 text-xs text-[#E4D8CB]">
+            <span class="w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+            <span>100% Scratch Baked (Never Premixes)</span>
+          </div>
+          <div class="flex items-center justify-center md:justify-start gap-2 text-xs text-[#E4D8CB]">
+            <span class="w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+            <span>82% Cultured Grass-Fed Butter</span>
+          </div>
+          <div class="flex items-center justify-center md:justify-start gap-2 text-xs text-[#E4D8CB]">
+            <span class="w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+            <span>Organic Food-Safe Edible Botany</span>
+          </div>
+          <div class="flex items-center justify-center md:justify-start gap-2 text-xs text-[#E4D8CB]">
+            <span class="w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+            <span>Climate-Controlled Chilled Transit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED CAKE PRODUCTS GRID (4 Cards in a Row, Exactly like Reference) -->
+    <section class="py-16 md:py-20 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-10">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-[#A09086] font-semibold">Curated Collections</span>
+            <h2 class="font-serif text-2xl md:text-3xl font-semibold text-[#231B16] mt-1">
+              Signature Cake Commissions
+            </h2>
+          </div>
+          <a href="gallery-flavors.html" class="text-xs font-semibold text-[#231B16] hover:text-[#CFB3A9] flex items-center gap-1">
+            <span>Explore All Flavors</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Cake Card 1: Lemon Cupcake Hamper -->
+          <div class="card-atelier p-4 flex flex-col justify-between bg-[#CDC6C3] rounded-2xl border border-[#A09086]">
+            <div>
+              <div class="w-full h-56 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/cupcake-lemon-hamper.jpg" alt="Artisanal Lemon and Bluebird Cupcake Hamper" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="flex items-center gap-1 text-[#CFB3A9] text-xs mb-1">
+                <span>★★★★★</span>
+                <span class="text-[#4A3E37] text-[11px] font-sans">(48 reviews)</span>
+              </div>
+              <h3 class="font-serif text-lg font-semibold text-[#231B16] mb-1">Lemon & Bird Cupcake Hamper</h3>
+              <p class="text-xs text-[#4A3E37] mb-3">Whipped lemon curd swirls, sugar crystals, edible bluebird discs in a rustic wooden basket.</p>
+            </div>
+            <div class="pt-3 border-t border-[#A09086] flex items-center justify-between">
+              <span class="font-serif text-base font-bold text-[#231B16]">From $95</span>
+              <a href="inquiry.html" class="btn-honey text-xs py-1.5 px-3">Order Hamper</a>
+            </div>
+          </div>
+
+          <!-- Cake Card 2: Chai Mug Illusion Cake -->
+          <div class="card-atelier p-4 flex flex-col justify-between bg-[#CDC6C3] rounded-2xl border border-[#A09086]">
+            <div>
+              <div class="w-full h-56 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/chai-mug-illusion-cake.jpg" alt="I Love Chai Ceramic Mug Illusion Cake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="flex items-center gap-1 text-[#CFB3A9] text-xs mb-1">
+                <span>★★★★★</span>
+                <span class="text-[#4A3E37] text-[11px] font-sans">(56 reviews)</span>
+              </div>
+              <h3 class="font-serif text-lg font-semibold text-[#231B16] mb-1">"I ❤️ CHAI" Illusion Mug Cake</h3>
+              <p class="text-xs text-[#4A3E37] mb-3">Sculpted ceramic cup illusion, whipped spiced caramel tea foam, and almond nankhatai biscuits.</p>
+            </div>
+            <div class="pt-3 border-t border-[#A09086] flex items-center justify-between">
+              <span class="font-serif text-base font-bold text-[#231B16]">From $185</span>
+              <a href="inquiry.html" class="btn-honey text-xs py-1.5 px-3">Order Cake</a>
+            </div>
+          </div>
+
+          <!-- Cake Card 3: Rose Bouquet & Bento Combo -->
+          <div class="card-atelier p-4 flex flex-col justify-between bg-[#CDC6C3] rounded-2xl border border-[#A09086]">
+            <div>
+              <div class="w-full h-56 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/rose-bouquet-bento-combo.jpg" alt="Fresh Rose Bouquet and Vintage Piped Bento Cake" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="flex items-center gap-1 text-[#CFB3A9] text-xs mb-1">
+                <span>★★★★★</span>
+                <span class="text-[#4A3E37] text-[11px] font-sans">(64 reviews)</span>
+              </div>
+              <h3 class="font-serif text-lg font-semibold text-[#231B16] mb-1">Rose Bouquet & Bento Hamper</h3>
+              <p class="text-xs text-[#4A3E37] mb-3">Vintage shell-piped pastel celebration bento cake paired with a lush crimson rose bouquet.</p>
+            </div>
+            <div class="pt-3 border-t border-[#A09086] flex items-center justify-between">
+              <span class="font-serif text-base font-bold text-[#231B16]">From $165</span>
+              <a href="inquiry.html" class="btn-honey text-xs py-1.5 px-3">Order Set</a>
+            </div>
+          </div>
+
+          <!-- Cake Card 4: Luminary Giftbox Cake -->
+          <div class="card-atelier p-4 flex flex-col justify-between bg-[#CDC6C3] rounded-2xl border border-[#A09086]">
+            <div>
+              <div class="w-full h-56 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/fairy-light-luxury-giftbox-cake.jpg" alt="Illuminated Fairy Light Bento Cake in Luxury Case" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="flex items-center gap-1 text-[#CFB3A9] text-xs mb-1">
+                <span>★★★★★</span>
+                <span class="text-[#4A3E37] text-[11px] font-sans">(42 reviews)</span>
+              </div>
+              <h3 class="font-serif text-lg font-semibold text-[#231B16] mb-1">The Luminary Fairy-Light Box</h3>
+              <p class="text-xs text-[#4A3E37] mb-3">Emerald watercolor marbled mini cake with gold calligraphy inside an illuminated display case.</p>
+            </div>
+            <div class="pt-3 border-t border-[#A09086] flex items-center justify-between">
+              <span class="font-serif text-base font-bold text-[#231B16]">From $140</span>
+              <a href="inquiry.html" class="btn-honey text-xs py-1.5 px-3">Order Box</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SOCIAL PROOF & MEDIA STRIP (Expanded Monumental Scale) -->
+    <section class="py-20 sm:py-24 md:py-32 lg:py-36 bg-[#E4D8CB] border-b border-[#A09086] relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <!-- Large Editorial Section Header -->
+        <div class="text-center mb-12 md:mb-16">
+          <span class="text-xs md:text-sm uppercase tracking-[0.28em] text-[#4A3E37] font-semibold block mb-3">
+            Real Celebrations · Verified Hosts & Planners
+          </span>
+          <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-semibold text-[#231B16] tracking-tight mb-4">
+            Loved by wedding couples and hosts
+          </h2>
+          <p class="text-base md:text-lg text-[#4A3E37] max-w-2xl mx-auto leading-relaxed">
+            Every bespoke centerpiece is baked to order, hand-finished with organic botanicals, and delivered with white-glove climate care.
+          </p>
+        </div>
+
+        <!-- Grand 4-Card Editorial Grid (Cards scaled from 288px to 560px) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-14 md:mb-16">
+          
+          <!-- Card 1: Large Photo Moment (Citrus Crates) -->
+          <div class="rounded-2xl overflow-hidden bg-[#CDC6C3] shadow-md border border-[#A09086] h-[480px] sm:h-[520px] lg:h-[560px] relative group flex flex-col justify-between">
+            <img src="assets/images/citrus-botanical-crates.jpg" alt="Twin Mediterranean Citrus Blossom Crates at Reception" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#231B16]/85 via-transparent to-[#231B16]/30"></div>
+            
+            <!-- Top Tag -->
+            <div class="relative z-10 p-5">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#231B16]/90 backdrop-blur-md text-[11px] font-sans font-medium text-[#E4D8CB] border border-[#A09086]/40">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#CFB3A9]"></span>
+                Wedding Reception Crates
+              </span>
+            </div>
+
+            <!-- Bottom Floating Caption -->
+            <div class="relative z-10 p-5">
+              <div class="bg-[#CDC6C3]/95 backdrop-blur-md p-4 rounded-xl text-[#231B16] border border-[#A09086]/40 shadow-lg">
+                <p class="font-serif text-lg font-bold text-[#231B16]">Elena & Marcus</p>
+                <p class="text-xs text-[#4A3E37] mt-0.5 font-sans">Sycamore Manor Estate · Twin Dessert Crates</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Large 5-Star Testimonial -->
+          <div class="p-8 sm:p-10 rounded-2xl bg-[#CDC6C3] shadow-md border border-[#A09086] flex flex-col justify-between h-[480px] sm:h-[520px] lg:h-[560px]">
+            <div>
+              <div class="flex items-center gap-1.5 text-[#CFB3A9] text-xl mb-6">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="font-serif text-xl sm:text-2xl lg:text-[1.6rem] italic text-[#231B16] leading-relaxed mb-6">
+                "The cake was the absolute centerpiece of our evening. The balance of sweetness was perfection, real vanilla caviar throughout."
+              </p>
+            </div>
+            
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#E4D8CB] border border-[#A09086]/40 text-xs text-[#4A3E37] font-sans mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#231B16]"></span>
+                <span>Verified Tasting Commission</span>
+              </div>
+              <div class="pt-6 border-t border-[#A09086]">
+                <p class="font-serif text-lg font-bold text-[#231B16]">Dr. Claire Hawthorne</p>
+                <p class="text-xs text-[#4A3E37] mt-0.5 font-sans">50th Birthday Gala Host · 85 Servings</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Large Photo Moment (Rose Bouquet & Bento Combo) -->
+          <div class="rounded-2xl overflow-hidden bg-[#CDC6C3] shadow-md border border-[#A09086] h-[480px] sm:h-[520px] lg:h-[560px] relative group flex flex-col justify-between">
+            <img src="assets/images/rose-bouquet-bento-combo.jpg" alt="Rose Bouquet and Birthday Bento Hamper Celebration" class="w-full h-full object-cover object-[center_35%] group-hover:scale-105 transition-transform duration-700 absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#231B16]/85 via-transparent to-[#231B16]/30"></div>
+            
+            <!-- Top Tag -->
+            <div class="relative z-10 p-5">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#231B16]/90 backdrop-blur-md text-[11px] font-sans font-medium text-[#E4D8CB] border border-[#A09086]/40">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#CFB3A9]"></span>
+                Celebration Floral Hamper
+              </span>
+            </div>
+
+            <!-- Bottom Floating Caption -->
+            <div class="relative z-10 p-5">
+              <div class="bg-[#CDC6C3]/95 backdrop-blur-md p-4 rounded-xl text-[#231B16] border border-[#A09086]/40 shadow-lg">
+                <p class="font-serif text-lg font-bold text-[#231B16]">Julian Ross</p>
+                <p class="text-xs text-[#4A3E37] mt-0.5 font-sans">Milestone Celebration · Bento Cake & Rose Bouquet</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Large 5-Star Testimonial -->
+          <div class="p-8 sm:p-10 rounded-2xl bg-[#CDC6C3] shadow-md border border-[#A09086] flex flex-col justify-between h-[480px] sm:h-[520px] lg:h-[560px]">
+            <div>
+              <div class="flex items-center gap-1.5 text-[#CFB3A9] text-xl mb-6">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="font-serif text-xl sm:text-2xl lg:text-[1.6rem] italic text-[#231B16] leading-relaxed mb-6">
+                "Punctual refrigerated delivery and seamless coordination with our florist on the floral placement. 10 out of 10."
+              </p>
+            </div>
+            
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#E4D8CB] border border-[#A09086]/40 text-xs text-[#4A3E37] font-sans mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#231B16]"></span>
+                <span>White-Glove Cold Transit</span>
+              </div>
+              <div class="pt-6 border-t border-[#A09086]">
+                <p class="font-serif text-lg font-bold text-[#231B16]">Camilla Thorne</p>
+                <p class="text-xs text-[#4A3E37] mt-0.5 font-sans">Bespoke Event Producer · 120 Guests</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Substantial Client Trust Bar Underneath -->
+        <div class="pt-10 border-t border-[#A09086] grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="p-4 rounded-xl bg-[#CDC6C3]/60 border border-[#A09086]/40">
+            <span class="font-serif text-3xl md:text-4xl font-bold text-[#231B16] block">4.98 / 5.0</span>
+            <span class="text-xs uppercase tracking-wider text-[#4A3E37] font-sans mt-1 block">Verified Host Rating</span>
+          </div>
+          <div class="p-4 rounded-xl bg-[#CDC6C3]/60 border border-[#A09086]/40">
+            <span class="font-serif text-3xl md:text-4xl font-bold text-[#231B16] block">100% Scratch</span>
+            <span class="text-xs uppercase tracking-wider text-[#4A3E37] font-sans mt-1 block">Cultured Grass-Fed Butter</span>
+          </div>
+          <div class="p-4 rounded-xl bg-[#CDC6C3]/60 border border-[#A09086]/40">
+            <span class="font-serif text-3xl md:text-4xl font-bold text-[#231B16] block">36 Hours</span>
+            <span class="text-xs uppercase tracking-wider text-[#4A3E37] font-sans mt-1 block">Oven to Celebration Window</span>
+          </div>
+          <div class="p-4 rounded-xl bg-[#CDC6C3]/60 border border-[#A09086]/40">
+            <span class="font-serif text-3xl md:text-4xl font-bold text-[#231B16] block">Chilled Transit</span>
+            <span class="text-xs uppercase tracking-wider text-[#4A3E37] font-sans mt-1 block">Dedicated Refrigerated Van</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. MANIFESTO SECTION WITH STEPPED SIDE BARS (Reference Style "We Are Lost In Honey" -> "We Are Devoted to Pure Craft") -->
+    <section class="py-20 md:py-28 bg-[#E4D8CB] border-b border-[#A09086] relative overflow-hidden">
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <span class="text-xs uppercase tracking-widest text-[#A09086] font-semibold block mb-2">Our Culinary Heritage</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-semibold text-[#231B16] tracking-tight mb-8">
+          We are Devoted to Pure Craft
+        </h2>
+        
+        <p class="text-base md:text-lg text-[#4A3E37] font-sans leading-relaxed mb-12 max-w-2xl mx-auto">
+          We believe celebrating life's most precious occasions calls for unhurried integrity. 
+          <span class="inline-block mx-1 w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+          We churn real grass-fed cultured butter. 
+          <span class="inline-block mx-1 w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+          We split single-origin Tahitian vanilla pods. 
+          <span class="inline-block mx-1 w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+          We press edible pansies grown without pesticides. 
+          <span class="inline-block mx-1 w-2 h-2 rounded-full bg-[#CFB3A9]"></span>
+          We bake every layer within 36 hours of celebration.
+        </p>
+
+        <!-- Callout Dark Card (Matching Reference Hexagon/Callout Banner) -->
+        <div class="rounded-2xl overflow-hidden bg-[#231B16] text-[#E4D8CB] p-8 md:p-12 shadow-xl border border-[#32261F] text-left grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-7">
+            <span class="text-xs uppercase tracking-wider text-[#CFB3A9] font-semibold block mb-2">Zero Freezers · Zero Shortcuts</span>
+            <h3 class="font-serif text-2xl md:text-3xl font-semibold leading-snug">
+              Every sponge is slow-baked to order for your exact guest count.
+            </h3>
+            <p class="text-sm text-[#E4D8CB] mt-3 leading-relaxed">
+              Industrial operations freeze sheet cakes for weeks. We start our mixers when your date approaches, ensuring fresh moisture and melt-in-the-mouth texture.
+            </p>
+          </div>
+          <div class="md:col-span-5 flex flex-col items-start md:items-end justify-center">
+            <div class="p-6 rounded-xl bg-[#32261F] border border-[#A09086]/30 text-center w-full">
+              <span class="font-serif text-4xl font-bold text-[#CFB3A9]">36 hrs</span>
+              <p class="text-xs text-[#E4D8CB] mt-1 font-sans">Freshness window from oven to your event table</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. SPLIT-IMAGE FEATURE SHOWCASE (2x2 Alternating Split-Image Checkerboard Layout) -->
+    <section class="bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
+        
+        <!-- Quadrant 1 (Top Left): Custom Event Cadence Text -->
+        <div class="order-1 md:order-1 bg-[#231B16] text-[#E4D8CB] p-8 sm:p-12 md:p-16 lg:p-20 flex flex-col justify-center min-h-[380px] md:h-[500px]">
+          <span class="text-xs uppercase tracking-widest text-[#CFB3A9] font-semibold mb-3">Custom Event Cadence</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-4 text-[#E4D8CB]">
+            Your celebration, on repeat
+          </h2>
+          <p class="text-sm md:text-base text-[#E4D8CB] font-sans leading-relaxed mb-8 max-w-md">
+            Whether booking an anniversary cake year after year or curating a milestone dessert buffet, our consultation process ensures effortless date holds.
+          </p>
+          <div>
+            <a href="inquiry.html" class="btn-honey text-sm py-3 px-8">
+              <span>Book Calendar Date</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quadrant 2 (Top Right): Artisanal Botanical Tiered Cake Image -->
+        <div class="order-2 md:order-2 h-[360px] md:h-[500px] overflow-hidden bg-[#CDC6C3]">
+          <img src="assets/images/hero-botanical-cake.jpg" alt="Artisanal Botanical Tiered Cake" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700">
+        </div>
+
+        <!-- Quadrant 3 (Bottom Left): Artisanal Chai Mug Cake Image (Split Image: Left on Desktop) -->
+        <div class="order-4 md:order-3 h-[360px] md:h-[500px] overflow-hidden bg-[#CDC6C3]">
+          <img src="assets/images/chai-mug-illusion-cake.jpg" alt="Artisanal Hand-Sculpted Chai Mug Illusion Cake" class="w-full h-full object-cover object-[center_48%] hover:scale-105 transition-transform duration-700">
+        </div>
+
+        <!-- Quadrant 4 (Bottom Right): The Gastronomy Text (Split Content: Right on Desktop) -->
+        <div class="order-3 md:order-4 bg-[#231B16] text-[#E4D8CB] p-8 sm:p-12 md:p-16 lg:p-20 flex flex-col justify-center min-h-[380px] md:h-[500px]">
+          <span class="text-xs uppercase tracking-widest text-[#CFB3A9] font-semibold mb-3">The Gastronomy</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-4 text-[#E4D8CB]">
+            The beauty of Scratch Pâtisserie
+          </h2>
+          <p class="text-sm md:text-base text-[#E4D8CB] font-sans leading-relaxed mb-8 max-w-md">
+            Experience the delicate interplay of moist sponge crumb, copper-pot fruit curds, and light Swiss meringue buttercream that dissolves on the tongue without greasiness.
+          </p>
+          <div>
+            <a href="gallery-flavors.html#flavors" class="btn-honey text-sm py-3 px-8">
+              <span>Explore Flavor Profiles</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. "A WORLD OF CAKES" 3-CARD CAROUSEL SHOWCASE (Reference Style "A World of Honey") -->
+    <section class="py-20 md:py-28 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest text-[#4A3E37] font-semibold">Tasting Flights</span>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-[#231B16] mt-1">
+            A World of Cake Flavors
+          </h2>
+          <p class="text-sm text-[#4A3E37] mt-3">
+            Pair your favorite seasonal sponge with scratch fillings cooked in our studio kettle.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          
+          <!-- Flavor Card 1 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] border border-[#A09086] text-center shadow-sm">
+            <div class="w-20 h-20 mx-auto rounded-full bg-[#E4D8CB] border border-[#A09086] flex items-center justify-center font-serif text-2xl font-bold text-[#A09086] mb-4">
+              01
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-[#231B16] mb-2">Tahitian Vanilla & Blackberry</h3>
+            <p class="text-xs text-[#4A3E37] leading-relaxed mb-4">
+              Fragrant whole vanilla bean sponge paired with seedless wild blackberry compote reduction.
+            </p>
+            <span class="text-xs font-semibold text-[#A09086]">Signature Wedding Flavor</span>
+          </div>
+
+          <!-- Flavor Card 2 (Elevated Center Card, Matching Reference) -->
+          <div class="p-8 rounded-2xl bg-[#231B16] text-[#E4D8CB] border-2 border-[#CFB3A9] text-center shadow-2xl transform md:-translate-y-4">
+            <span class="badge-pill bg-[#CFB3A9] text-[#E4D8CB] border-none text-[10px] mb-4 inline-block">Most Requested</span>
+            <div class="w-24 h-24 mx-auto rounded-full bg-[#32261F] border border-[#CFB3A9] flex items-center justify-center font-serif text-3xl font-bold text-[#CFB3A9] mb-4">
+              02
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-[#E4D8CB] mb-2">70% Valrhona & Salted Caramel</h3>
+            <p class="text-xs text-[#E4D8CB] leading-relaxed mb-6">
+              Rich dark Belgian cocoa crumb, house-cooked Fleur de Sel caramel ribbon, and espresso ganache.
+            </p>
+            <a href="inquiry.html" class="btn-honey text-xs py-2 px-6">Select This Flavor</a>
+          </div>
+
+          <!-- Flavor Card 3 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] border border-[#A09086] text-center shadow-sm">
+            <div class="w-20 h-20 mx-auto rounded-full bg-[#E4D8CB] border border-[#A09086] flex items-center justify-center font-serif text-2xl font-bold text-[#A09086] mb-4">
+              03
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-[#231B16] mb-2">Brown Butter & Bronte Pistachio</h3>
+            <p class="text-xs text-[#4A3E37] leading-relaxed mb-4">
+              Noisette browned butter, roasted Sicilian pistachio flour, and wild raspberry confit.
+            </p>
+            <span class="text-xs font-semibold text-[#A09086]">Artisanal Nutty Crumb</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. COMPARISON MATRIX: "WHAT MAKES OUR BAKERY DIFFERENT?" (Matching Reference Table) -->
+    <section class="py-20 md:py-28 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Text Column -->
+          <div class="lg:col-span-4">
+            <span class="text-xs uppercase tracking-widest text-[#A09086] font-semibold">The Standard</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-semibold text-[#231B16] mt-2 mb-4">
+              What makes our bakery different?
+            </h2>
+            <p class="text-sm text-[#4A3E37] font-sans leading-relaxed mb-6">
+              We never compromise on pantry integrity. Compare our heirloom techniques with mass-produced retail alternatives.
+            </p>
+            <a href="about.html" class="btn-honey-outline text-xs py-2 px-5">
+              Read Our Sourcing Standards
+            </a>
+          </div>
+
+          <!-- Right Comparison Table (Golden highlighted column, matching reference) -->
+          <div class="lg:col-span-8 overflow-x-auto">
+            <table class="w-full text-left text-xs bg-[#CDC6C3] rounded-2xl border border-[#A09086] overflow-hidden shadow-sm">
+              <thead>
+                <tr class="border-b border-[#A09086] text-[#231B16]">
+                  <th class="p-4 font-serif text-sm">Quality Criteria</th>
+                  <th class="p-4 font-serif text-sm bg-[#E4D8CB] text-[#231B16] font-bold text-center border-x border-[#A09086]">The Best Home Baker</th>
+                  <th class="p-4 font-serif text-sm text-[#A09086] text-center">Supermarket Cake</th>
+                  <th class="p-4 font-serif text-sm text-[#A09086] text-center">Commercial Bakery</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[#A09086]">
+                <tr>
+                  <td class="p-4 font-medium text-[#231B16]">100% Cultured Grass-Fed Butter</td>
+                  <td class="p-4 bg-[#E4D8CB] text-center font-bold text-[#231B16] border-x border-[#A09086]">✓ Yes (82% Fat)</td>
+                  <td class="p-4 text-center text-[#A09086]">✗ Shortening / Palm Oil</td>
+                  <td class="p-4 text-center text-[#A09086]">Blend / Margarine</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-medium text-[#231B16]">Whole Vanilla Bean Pods</td>
+                  <td class="p-4 bg-[#E4D8CB] text-center font-bold text-[#231B16] border-x border-[#A09086]">✓ Tahitian & Bourbon</td>
+                  <td class="p-4 text-center text-[#A09086]">✗ Vanillin Chemical</td>
+                  <td class="p-4 text-center text-[#A09086]">Extract Essence</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-medium text-[#231B16]">Bake-to-Event Timeline</td>
+                  <td class="p-4 bg-[#E4D8CB] text-center font-bold text-[#231B16] border-x border-[#A09086]">✓ Within 36 Hours</td>
+                  <td class="p-4 text-center text-[#A09086]">Frozen 4 to 12 Weeks</td>
+                  <td class="p-4 text-center text-[#A09086]">Frozen 1 to 2 Weeks</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-medium text-[#231B16]">Edible Botanical Garnishes</td>
+                  <td class="p-4 bg-[#E4D8CB] text-center font-bold text-[#231B16] border-x border-[#A09086]">✓ Certified Food-Safe</td>
+                  <td class="p-4 text-center text-[#A09086]">✗ Artificial Sprinkles</td>
+                  <td class="p-4 text-center text-[#A09086]">Sprayed Florist Stems</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-medium text-[#231B16]">Scratch Copper-Kettle Curds</td>
+                  <td class="p-4 bg-[#E4D8CB] text-center font-bold text-[#231B16] border-x border-[#A09086]">✓ Fresh Fruit Reductions</td>
+                  <td class="p-4 text-center text-[#A09086]">✗ High Fructose Jelly</td>
+                  <td class="p-4 text-center text-[#A09086]">Commercial Pails</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-medium text-[#231B16]">Chilled Climate-Controlled Transit</td>
+                  <td class="p-4 bg-[#E4D8CB] text-center font-bold text-[#231B16] border-x border-[#A09086]">✓ Dedicated Refrigerated Van</td>
+                  <td class="p-4 text-center text-[#A09086]">✗ Customer Trunk</td>
+                  <td class="p-4 text-center text-[#A09086]">Standard Courier</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FULL-WIDTH PANORAMIC ARTISANAL PHOTO BANNER (Matching Reference Honey Drizzle Shot) -->
+    <section class="relative h-72 md:h-96 w-full overflow-hidden border-b border-[#A09086]">
+      <img src="assets/images/baker-atelier-story.jpg" alt="Artisan Pastry Chef Garnishing Cake" class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-[#231B16]/40 flex items-center justify-center">
+        <div class="text-center text-[#E4D8CB] px-6">
+          <span class="text-xs uppercase tracking-widest text-[#E4D8CB] font-semibold block mb-2">Patience & Devotion</span>
+          <p class="font-serif text-2xl md:text-4xl font-semibold max-w-xl">
+            "The finest creations cannot be rushed. They require touch, intuition, and patience."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. BLOG / JOURNAL GRID: "FROM THE ATELIER" (3 Cards, Matching Reference "From the Hive") -->
+    <section class="py-20 md:py-28 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest text-[#A09086] font-semibold">Field Notes & Guides</span>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-[#231B16] mt-1">
+            From the Atelier Kitchen
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Article 1 -->
+          <div class="card-atelier p-5 bg-[#CDC6C3] rounded-2xl border border-[#A09086] flex flex-col justify-between">
+            <div>
+              <div class="h-48 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/cupcake-lemon-hamper.jpg" alt="Pressing Edible Flowers and Botanical Wafers" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] uppercase tracking-wider text-[#A09086] font-semibold">Botanical Art</span>
+              <h3 class="font-serif text-xl font-semibold text-[#231B16] mt-1 mb-2">The Art of Edible Botanical Sugar Art</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed mb-4">
+                How we formulate delicate edible wafer flora and citrus garnishes for bespoke cupcake hampers.
+              </p>
+            </div>
+            <a href="about.html" class="btn-honey text-xs py-2 w-full text-center">Read Story</a>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="card-atelier p-5 bg-[#CDC6C3] rounded-2xl border border-[#A09086] flex flex-col justify-between">
+            <div>
+              <div class="h-48 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/fairy-light-luxury-giftbox-cake.jpg" alt="Illuminated Bento Cake Presentation" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] uppercase tracking-wider text-[#A09086] font-semibold">Packaging & Glow</span>
+              <h3 class="font-serif text-xl font-semibold text-[#231B16] mt-1 mb-2">The Architecture of Illuminated Bento Boxes</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed mb-4">
+                How crystal acrylic casing and warm micro-lights preserve dessert moisture while creating unforgettable reveals.
+              </p>
+            </div>
+            <a href="about.html" class="btn-honey text-xs py-2 w-full text-center">Read Story</a>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="card-atelier p-5 bg-[#CDC6C3] rounded-2xl border border-[#A09086] flex flex-col justify-between">
+            <div>
+              <div class="h-48 rounded-xl overflow-hidden mb-4 bg-[#E4D8CB]">
+                <img src="assets/images/citrus-botanical-crates.jpg" alt="Artisanal Dessert Presentation Crates" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] uppercase tracking-wider text-[#A09086] font-semibold">Event Styling</span>
+              <h3 class="font-serif text-xl font-semibold text-[#231B16] mt-1 mb-2">Curating Rustic Dessert Tables</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed mb-4">
+                Why presentation crates and satin ribbon accents elevate milestone showers and reception dessert bars.
+              </p>
+            </div>
+            <a href="gallery-flavors.html#sizing" class="btn-honey text-xs py-2 w-full text-center">Read Story</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FAQ & BUYER REASONS BENTO GRID (2x3 Grid with Highlighted First Card, Matching Reference) -->
+    <section class="py-20 md:py-28 bg-[#E4D8CB] border-b border-[#A09086]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest text-[#4A3E37] font-semibold">Client Inquiries</span>
+          <h2 class="font-serif text-3xl md:text-4xl font-semibold text-[#231B16] mt-1">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Card 1: Highlighted Gold Card (Matching Reference First Highlighted Card) -->
+          <div class="p-6 rounded-2xl bg-[#CFB3A9] text-[#E4D8CB] shadow-md flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-[#E4D8CB] font-semibold block mb-2">Notice Period</span>
+              <h3 class="font-serif text-xl font-semibold text-[#E4D8CB] mb-2">How far in advance should I book?</h3>
+              <p class="text-xs text-[#E4D8CB] leading-relaxed">
+                For wedding centerpieces, we recommend booking 3 to 6 months in advance. Celebration cakes require a minimum of 3 weeks notice.
+              </p>
+            </div>
+            <a href="inquiry.html" class="btn-honey text-xs py-2 mt-4 bg-[#231B16] hover:bg-[#32261F] text-[#E4D8CB] w-fit">Reserve Date</a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] text-[#231B16] border border-[#A09086] shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-[#A09086] font-semibold block mb-2">Safe Transit</span>
+              <h3 class="font-serif text-xl font-semibold mb-2">How should I transport my cake?</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed">
+                Always place the cake box on the flat passenger footwell floor with AC turned on high. Never on slanted car seats or passenger laps.
+              </p>
+            </div>
+            <a href="faq-terms.html#transport" class="text-xs font-semibold text-[#CFB3A9] hover:underline mt-4 block">Read Transport Guide →</a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] text-[#231B16] border border-[#A09086] shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-[#A09086] font-semibold block mb-2">Serving Temperature</span>
+              <h3 class="font-serif text-xl font-semibold mb-2">When should the cake be served?</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed">
+                Real cultured butter sets firm in the fridge. Bring your cake to room temperature 1 to 2 hours before cutting for optimal silkiness.
+              </p>
+            </div>
+            <a href="faq-terms.html#transport" class="text-xs font-semibold text-[#CFB3A9] hover:underline mt-4 block">Temperature Care →</a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] text-[#231B16] border border-[#A09086] shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-[#A09086] font-semibold block mb-2">Tasting Flights</span>
+              <h3 class="font-serif text-xl font-semibold mb-2">Do you provide tasting boxes?</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed">
+                Yes, our curated 6-slice seasonal tasting flight box is available for weekly collection to finalize your tier selections.
+              </p>
+            </div>
+            <a href="gallery-flavors.html" class="text-xs font-semibold text-[#CFB3A9] hover:underline mt-4 block">Order Tasting Box →</a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] text-[#231B16] border border-[#A09086] shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-[#A09086] font-semibold block mb-2">Dietary Protocol</span>
+              <h3 class="font-serif text-xl font-semibold mb-2">Do you accommodate allergies?</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed">
+                We craft certified gluten-friendly recipes using almond flour, but operate a kitchen that handles wheat, nuts, and dairy.
+              </p>
+            </div>
+            <a href="faq-terms.html#allergens" class="text-xs font-semibold text-[#CFB3A9] hover:underline mt-4 block">Allergen Notice →</a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="p-6 rounded-2xl bg-[#CDC6C3] text-[#231B16] border border-[#A09086] shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-[#A09086] font-semibold block mb-2">Deposit Terms</span>
+              <h3 class="font-serif text-xl font-semibold mb-2">What is the deposit policy?</h3>
+              <p class="text-xs text-[#4A3E37] leading-relaxed">
+                A 50% non-refundable retainer reserves your production calendar date. The remaining balance is due 14 days prior to delivery.
+              </p>
+            </div>
+            <a href="faq-terms.html#deposits" class="text-xs font-semibold text-[#CFB3A9] hover:underline mt-4 block">Payment Policies →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. MASSIVE BRAND MARQUEE BLOCK (Matching Reference "latin honeyshop" Giant Banner) -->
+    <section class="py-16 md:py-24 bg-[#231B16] text-[#E4D8CB] border-t border-[#32261F] text-center px-6">
+      <div class="max-w-4xl mx-auto">
+        <span class="text-xs uppercase tracking-[0.3em] text-[#CFB3A9] font-sans block mb-4">
+          Artisanal Pâtisserie Atelier
+        </span>
+        <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#E4D8CB] leading-none mb-6">
+          the best home baker
+        </h2>
+        <div class="w-24 h-[1px] bg-[#CFB3A9] mx-auto mb-6"></div>
+        <p class="text-sm md:text-base text-[#CDC6C3] max-w-lg mx-auto font-sans leading-relaxed mb-8">
+          Crafting architectural, botanical centerpieces for unforgettable weddings and milestone celebrations.
+        </p>
+        <div class="flex items-center justify-center gap-4">
+          <a href="inquiry.html" class="btn-honey text-sm py-3 px-8">
+            <span>Begin Custom Order</span>
+          </a>
+          <a href="gallery-flavors.html" class="btn-honey-outline text-[#E4D8CB] border-[#A09086] hover:bg-[#E4D8CB]/10 text-sm py-3 px-6">
+            <span>Explore Portfolio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Bottom CTA for Mobile -->
+  <aside class="sticky-mobile-cta">
+    <div class="flex flex-col">
+      <span class="text-xs font-semibold text-[#231B16]">The Best Home Baker</span>
+      <span class="text-[11px] text-[#A09086]">Dates filling quickly</span>
+    </div>
+    <a href="inquiry.html" class="btn-honey text-xs py-2 px-4">
+      Book Cake
+    </a>
+  </aside>
+
+  <!-- 14. FOOTER -->
+  <footer class="bg-[#E4D8CB] border-t border-[#A09086] py-16 text-sm text-[#4A3E37]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div class="md:col-span-1">
+        <span class="font-serif text-2xl font-bold text-[#231B16] block mb-2">The Best Home Baker</span>
+        <p class="text-xs leading-relaxed text-[#4A3E37]">
+          Handcrafted celebration cakes and botanical sugar art. Made from scratch in our certified home atelier kitchen.
+        </p>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Explore</p>
+        <ul class="space-y-2 text-xs">
+          <li><a href="gallery-flavors.html" class="hover:text-[#231B16]">Portfolio Gallery</a></li>
+          <li><a href="gallery-flavors.html#flavors" class="hover:text-[#231B16]">Flavor Combinations</a></li>
+          <li><a href="gallery-flavors.html#sizing" class="hover:text-[#231B16]">Sizing & Serving Calculator</a></li>
+          <li><a href="about.html" class="hover:text-[#231B16]">Our Ingredients & Sourcing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Client Care</p>
+        <ul class="space-y-2 text-xs">
+          <li><a href="inquiry.html" class="hover:text-[#231B16]">Custom Inquiry Form</a></li>
+          <li><a href="faq-terms.html#transport" class="hover:text-[#231B16]">Transport Instructions</a></li>
+          <li><a href="faq-terms.html#deposits" class="hover:text-[#231B16]">Deposit & Retainer Policies</a></li>
+          <li><a href="faq-terms.html#allergens" class="hover:text-[#231B16]">Allergen Protocol</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-[#231B16] mb-3 text-xs uppercase tracking-wider">Atelier Studio</p>
+        <p class="text-xs text-[#4A3E37] leading-relaxed mb-2">
+          Appointments and tastings scheduled by confirmed reservation only.
+        </p>
+        <p class="text-xs font-mono text-[#231B16]">hello@thebesthomebaker.com</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#A09086] flex flex-col md:flex-row items-center justify-between text-xs text-[#6E5F56]">
+      <p>© 2026 The Best Home Baker. All rights reserved.</p>
+      <p class="mt-2 md:mt-0">Certified Licensed Home Kitchen · Purity & Hygiene First</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

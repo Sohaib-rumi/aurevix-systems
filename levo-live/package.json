@@ -1,0 +1,20 @@
+{
+  "name": "aurevix-levo-production",
+  "version": "1.0.0",
+  "description": "Aurevix Systems — 5-Page Architectural Web Production ($100 Flat)",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "preview": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "aurevix",
+    "web-development",
+    "portfolio",
+    "threejs",
+    "gsap",
+    "landing-page"
+  ],
+  "author": "Aurevix Systems",
+  "license": "UNLICENSED"
+}
