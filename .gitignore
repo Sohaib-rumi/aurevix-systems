@@ -2,6 +2,7 @@
 scratch/
 .agents/
 .gemini/
+.baker-backup/
 *.log
 __pycache__/
 *.pyc

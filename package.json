@@ -1,13 +1,20 @@
 {
-  "name": "the-best-home-baker",
+  "name": "aurevix-levo-production",
   "version": "1.0.0",
-  "description": "The Best Home Baker - Bespoke Artisanal Cake Studio & Pâtisserie",
+  "description": "Aurevix Systems — 5-Page Architectural Web Production ($100 Flat)",
+  "private": true,
   "scripts": {
-    "dev": "npx serve -l 3000 .",
-    "start": "npx serve -l 3000 ."
+    "start": "npx serve . -l 3000",
+    "preview": "npx serve . -l 3000"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "serve": "^14.2.4"
-  }
+  "keywords": [
+    "aurevix",
+    "web-development",
+    "portfolio",
+    "threejs",
+    "gsap",
+    "landing-page"
+  ],
+  "author": "Aurevix Systems",
+  "license": "UNLICENSED"
 }
